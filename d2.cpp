@@ -3,7 +3,7 @@
 #include<climits>  
 #include<iomanip>
 #include<vector>
-// sdsds
+
 //================= MOSTAFA SADEGHI   9423067 =============
 
 typedef long long int LLI;
@@ -54,7 +54,8 @@ int main()
                 std::cout << count <<",";
                 for (int k = 1; k <= count; ++k)
                 {
-                    sum+= a[k-1][0];
+                    int index{b[k]};
+                    sum+= a[index-1][0];
                 }
             }
             std::cout << "^^^^^^^^^" << std::endl;
