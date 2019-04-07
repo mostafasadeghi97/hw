@@ -45,16 +45,19 @@ int main()
         for(size_t i = 0;i < a.size();i++){
             int sum{};
             std::vector<int> b{a[i]};
-            for (size_t j = 0; j < b.size(); ++j)
+            int count{b[0]};
+            sum += count;
+            for (size_t j = 1; j < b.size(); ++j)
             {
                 
-                int count{b[0]};
-                sum += count;
+                
+                std::cout << count <<",";
                 for (int k = 1; k <= count; ++k)
                 {
                     sum+= a[k-1][0];
                 }
             }
+            std::cout << "^^^^^^^^^" << std::endl;
             if (sum > sum2)
             {
                 sum2 = sum;
