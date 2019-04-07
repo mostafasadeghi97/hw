@@ -47,10 +47,10 @@ int main()
             std::vector<int> b{a[i]};
             for (size_t j = 0; j < b.size(); ++j)
             {
-                std::cout << b[j] << ",";
+                
                 int count{b[0]};
                 sum += count;
-                for (int k = 0; k <= count; ++k)
+                for (int k = 1; k <= count; ++k)
                 {
                     sum+= a[k-1][0];
                 }
@@ -61,6 +61,11 @@ int main()
             }
         }
         final_max.push_back(sum2);
+    }
+
+    for (auto a:final_max)
+    {
+        std::cout << a << std::endl;
     }
     
    
